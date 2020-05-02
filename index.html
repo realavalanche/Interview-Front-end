@@ -13,7 +13,7 @@
             <div class="head row">  
                 <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
                 <a href="#"><img src="src/images/company-logo.png" alt="Company logo" class="logo"></a> 
-                <a href="#contact" class="touch-mobile">
+                <a href="#contact" role="link" aria-label="Get in touch" class="touch-mobile">
                     <span class="ion-android-chat"></span>
                 </a>
                 <ul class="main-nav">
@@ -29,11 +29,11 @@
                     </li>
                 </ul>
             </div>
-            <ul class="main-nav nav-mobile js--main-nav">
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#solutions">Solutions</a></li>
-                <li><a href="#blog">Blog</a></li>
+            <ul tabindex="0" role="navigation" aria-label="navigation" class="main-nav nav-mobile js--main-nav">
+                <li><a role="tab" href="#about">About</a></li>
+                <li><a role="tab" href="#services">Services</a></li>
+                <li><a role="tab" href="#solutions">Solutions</a></li>
+                <li><a role="tab" href="#blog">Blog</a></li>
             </ul>
         </nav>
         <div class="header-text js--header-text">
