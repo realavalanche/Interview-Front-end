@@ -4,29 +4,28 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
-    <title>Parcel Sandbox</title>
+    <title>Axelerant Page</title>
   </head>
 
   <body>
     <header>
-        <nav class="navigation">
+        <nav role="navigation" class="navigation">
             <div class="head row">  
                 <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
-                <a href="#"><img src="src/images/company-logo.png" alt="Omnifood logo" class="logo"></a> 
+                <a href="#"><img src="src/images/company-logo.png" alt="Company logo" class="logo"></a> 
                 <a href="#contact" class="touch-mobile">
                     <span class="ion-android-chat"></span>
                 </a>
                 <ul class="main-nav">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#solutions">Solutions</a></li>
-                    <li><a href="#blog">Blog</a></li>
+                    <li><a role="tab" href="#about">About</a></li>
+                    <li><a role="tab" href="#services">Services</a></li>
+                    <li><a role="tab" href="#solutions">Solutions</a></li>
+                    <li><a role="tab" href="#blog">Blog</a></li>
                     <li class="cta">                        
-                        <a href="#contact">
+                        <a role="tab" href="#contact">
                             <span class="ion-android-chat"></span>
                             Get In Touch
                         </a>
-                        
                     </li>
                 </ul>
             </div>
@@ -38,106 +37,106 @@
             </ul>
         </nav>
         <div class="header-text js--header-text">
-            <h2>Integer bibendum sit amet<br>arcu vel egestas.</h2>
+            <h2 role="heading" tabindex="0">Integer bibendum sit amet<br>arcu vel egestas.</h2>
             <div class="header-box">
-                <a class="header-box__item">
-                    <img src="src/images/people.png" style="width: fit-content;" />
+                <a role="tab" aria-label="Service Name" tabindex="0" class="header-box__item">
+                    <img src="src/images/people.png" alt="Service Image" />
                     <span>Service Name</span>
                 </a>
-                <a class="header-box__item">
-                    <img src="src/images/conf.png" style="width: fit-content;" />
+                <a role="tab" aria-label="Service Name" tabindex="0" class="header-box__item">
+                    <img src="src/images/conf.png" alt="Service Image" />
                     <span>Service Name</span>
                 </a>
-                <a class="header-box__item">
-                    <img src="src/images/tool.png" style="width: fit-content;" />
+                <a role="tab" aria-label="Service Name" tabindex="0" class="header-box__item">
+                    <img src="src/images/tool.png" alt="Service Image" />
                     <span>Service Name</span>
                 </a>
             </div>
         </div>        
     </header>
 
-    <section class="world row" id="works">
+    <section class="world row js--world-row" aria-label="world" tabindex="0">
         <div class="world__desc">
-            <h3>Mauris id bibendum est. Proin dapibus sollicitudin iaculis, Maecenus condimentum maximus laoreet.</h3>
-            <p>In maximus euismod egestas. Fusce tincidunt posuere est non elementum. Vivamus tincidunt eleifund nisl et gravida. Aenean in lorem ultrices, pellentesque augue eu, mattis est. Praesent sed volutpat nibh. Morbi faucibus tortor sed neque vulputate hendrerit. Sed aliquam mattis purus eleifend consectetur. Nulla mollis non enim non tempus.</p>
+            <h3 tabindex="0" role="heading">Mauris id bibendum est. Proin dapibus sollicitudin iaculis, Maecenus condimentum maximus laoreet.</h3>
+            <p tabindex="0">In maximus euismod egestas. Fusce tincidunt posuere est non elementum. Vivamus tincidunt eleifund nisl et gravida. Aenean in lorem ultrices, pellentesque augue eu, mattis est. Praesent sed volutpat nibh. Morbi faucibus tortor sed neque vulputate hendrerit. Sed aliquam mattis purus eleifend consectetur. Nulla mollis non enim non tempus.</p>
         </div>
-        <div class="world__map"></div>
+        <div class="world__map" tabindex="0" aria-label="world map" role="img"></div>
     </section>
 
-    <section class="testimonials">
-        <h3>Testimonials</h3>
+    <section class="testimonials" aria-label="testimonials" tabindex="0">
+        <h3 role="heading" tabindex="0">Testimonials</h3>
         <div class="testimonials-box row">
             <div class="testimonials-box__item">
                 <div class="speech-bubble-ds">
-                    <blockquote>
+                    <blockquote tabindex="0">
                         Mauris at quam at mauris venenetis eleifend. Nullam eleifend idio a pretium dignissim. anean non rhouncus quam.
                     </blockquote>
                     <div class="speech-bubble-ds__arrow"></div>
                 </div>
-                <div class=avatar>
-                    <img src="src/images/customer.png">
+                <div class="avatar">
+                    <img src="src/images/customer.png" alt="Client Image" tabindex="0" />
                     <div>
-                        <div class="avatar__description">CLIENT NAME</div>
-                        <div class="avatar__description--pos">Position, ORG</div>
+                        <div class="avatar__description" tabindex="0">CLIENT NAME</div>
+                        <div class="avatar__description--pos" tabindex="0">Position, ORG</div>
                     </div>
                 </div>
             </div>
             <div class="testimonials-box__item">
                 <div class="speech-bubble-ds">
-                    <blockquote>
+                    <blockquote tabindex="0">
                         Mauris at quam at mauris venenetis eleifend. Nullam eleifend idio a pretium dignissim. anean non rhouncus quam.
                     </blockquote>
                     <div class="speech-bubble-ds__arrow"></div>
                 </div>
-                <div class=avatar>
-                    <img src="src/images/customer.png">
+                <div class="avatar">
+                    <img src="src/images/customer.png" alt="Client Image" tabindex="0" />
                     <div>
-                        <div class="avatar__description">CLIENT NAME</div>
-                        <div class="avatar__description--pos">Position, ORG</div>
+                        <div class="avatar__description" tabindex="0">CLIENT NAME</div>
+                        <div class="avatar__description--pos" tabindex="0">Position, ORG</div>
                     </div>
                 </div>
             </div>
             <div class="testimonials-box__item">
                 <div class="speech-bubble-ds">
-                    <blockquote>
+                    <blockquote tabindex="0">
                         Mauris at quam at mauris venenetis eleifend. Nullam eleifend idio a pretium dignissim. anean non rhouncus quam.
                     </blockquote>
                     <div class="speech-bubble-ds__arrow"></div>
                 </div>
-                <div class=avatar>
-                    <img src="src/images/customer.png">
+                <div class="avatar">
+                    <img src="src/images/customer.png" alt="Client Image" tabindex="0" />
                     <div>
-                        <div class="avatar__description">CLIENT NAME</div>
-                        <div class="avatar__description--pos">Position, ORG</div>
+                        <div class="avatar__description" tabindex="0">CLIENT NAME</div>
+                        <div class="avatar__description--pos" tabindex="0">Position, ORG</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section-contact">
+    <section class="section-contact" aria-label="work with us" tabindex="0">
         <div class="contact row">
-            <h3>Convinced To Work With Us?</h3>
-            <p>Company has helped agencies keep their promised to clients since 2005.</p>
+            <h3 role="heading" tabindex="0">Convinced To Work With Us?</h3>
+            <p tabindex="0">Company has helped agencies keep their promised to clients since 2005.</p>
             <div class="details">
-                <input type="text" placeholder="Fullname" aria-placeholder="Fullname">
-                <input type="email" placeholder="Email Address" aria-placeholder="Email Address">
-                <input type="tel" placeholder="Phone Number" aria-placeholder="Phone Number">
+                <input aria-label="Enter your full name" type="text" placeholder="Fullname" />
+                <input aria-label="Enter your email address" type="email" placeholder="Email Address" />
+                <input aria-label="Enter your phone number" type="tel" placeholder="Phone Number" />
             </div>
-            <textarea name="message" id="" cols="30" rows="10" placeholder="Message in brief" aria-placeholder="Message in brief"></textarea>
-            <a class="btn" href="#">Submit</a>
+            <textarea aria-label="Enter your message in brief" name="message" id="" cols="30" rows="10" placeholder="Message in brief"></textarea>
+            <a role="button" aria-label="Submit" class="btn" href="#">Submit</a>
         </div>
     </section>
 
     <footer>
-        <div class=copyright>&copy;&nbsp;<script>document.write(new Date().getFullYear());</script>&nbsp;Company.&nbsp;All rights reserved.</div>
+        <div tabindex="0" class=copyright>&copy;&nbsp;<script>document.write(new Date().getFullYear());</script>&nbsp;Company.&nbsp;All rights reserved.</div>
         <div>
-            <span>Follow us on:</span>
+            <span tabindex="0">Follow us on:</span>
             <ul class="social-links">
-                <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-                <li><a href="#"><i class="ion-social-linkedin"></i></a></li>
-                <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-                <li><a href="#"><i class="ion-email"></i></a></li>
+                <li><a role="link" aria-label="facebook" href="#"><i class="ion-social-facebook"></i></a></li>
+                <li><a role="link" aria-label="linkedin" href="#"><i class="ion-social-linkedin"></i></a></li>
+                <li><a role="link" aria-label="twitter" href="#"><i class="ion-social-twitter"></i></a></li>
+                <li><a role="link" aria-label="email" href="#"><i class="ion-email"></i></a></li>
             </ul>
         </div>
     </footer>
@@ -148,6 +147,7 @@
     <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
     <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+    <script src="src/js/jquery.waypoints.min.js"></script>
     <script src="src/js/script.js"></script>
   </body>
 </html>

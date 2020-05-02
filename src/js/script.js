@@ -3,7 +3,6 @@ $(document).ready(function() {
     $('.js--nav-icon').click(function() {
         var nav = $('.js--main-nav');
         var icon = $('.js--nav-icon i');
-        // var header = $('header');
         var headerText = $('.js--header-text');
         
         nav.slideToggle(200);
@@ -18,10 +17,19 @@ $(document).ready(function() {
 
         if (headerText.hasClass('long-header-text')) {
             headerText.removeClass('long-header-text');
-            // header.removeClass('long-header');
         } else {
             headerText.addClass('long-header-text');
-            // header.addClass('long-header');
         }
+    });
+    
+    /* For the sticky navigation */
+    $('.js--world-row').waypoint(function(direction) {
+        if (direction == "down") {
+            $('nav').addClass('sticky');
+        } else {
+            $('nav').removeClass('sticky');
+        }
+    }, {
+      offset: '60px;'
     });
 });
